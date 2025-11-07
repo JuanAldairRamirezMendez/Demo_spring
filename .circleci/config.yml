@@ -11,9 +11,8 @@ jobs:
           command: mvn clean test
       - run:
           name: Construir archivo JAR
-          command: mvn package -DskipTests
-      - store_artifacts:
-          path: target/demo-0.0.1-SNAPSHOT.jar
+          command: mvn package -DskipTests      - store_artifacts:
+          path: target/demo-spring-0.0.1-SNAPSHOT.jar
           destination: app.jar
 
 workflows:
